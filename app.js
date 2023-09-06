@@ -333,11 +333,12 @@ const renderCharts = (headerTab) => {
                 formatter: (cfg) => {
                     cfg = cfg[0]
                     const value = cfg.value.toLocaleString('en-IN')
-                    return `<div>
-                       <div style="color: #000;">${cfg.axisValue}</div>
-                        <div style="margin-top: 10px; font-size: 20px; font-weight: 400; color: rgb(82, 176, 161)">$ ${value}</div>
+                    return `<div style="background: #282828;">
+                       <div style="color: #FFF;">${cfg.axisValue}</div>
+                        <div style="margin-top: 10px; font-size: 20px; font-weight: 400; color: rgb(47, 165, 203)">$ ${value}</div>
                     </div>`
-                }
+                },
+                backgroundColor: '#282828'
             },
             grid: {
                 left: '4%',
@@ -353,12 +354,21 @@ const renderCharts = (headerTab) => {
                 axisLabel: {
                     margin: 40,
                     showMaxLabel: true,
-                    showMinLabel: true
-                }
+                    showMinLabel: true,
+                    color: '#aaa'
+                },
             },
             yAxis: {
                 type: 'value',
-                position: 'right'
+                position: 'right',
+                axisLabel: {
+                    color: '#aaa'
+                },
+                splitLine: {
+                    lineStyle: {
+                        color: 'rgba(170, 170, 170, 0.3)'
+                    }
+                }
             },
             series: [
                 {
@@ -394,11 +404,12 @@ const renderCharts = (headerTab) => {
                 formatter: (cfg) => {
                     cfg = cfg[0]
                     const value = cfg.value.toLocaleString('en-IN')
-                    return `<div>
-                       <div style="color: #000;">${cfg.axisValue}</div>
+                    return `<div style="background: #282828;">
+                       <div style="color: #fff;">${cfg.axisValue}</div>
                         <div style="margin-top: 10px; font-size: 20px; font-weight: 400; color: rgb(82, 176, 161)">$ ${value}</div>
                     </div>`
-                }
+                },
+                backgroundColor: '#282828'
             },
             grid: {
                 left: '4%',
@@ -413,14 +424,21 @@ const renderCharts = (headerTab) => {
                 },
                 axisLabel: {
                     showMaxLabel: true,
-                    showMinLabel: true
-                }
+                    showMinLabel: true,
+                    color: '#aaa'
+                },
             },
             yAxis: {
                 type: 'value',
                 position: 'right',
                 axisLabel: {
-                    formatter: '$ {value}.00'
+                    formatter: '$ {value}.00',
+                    color: '#aaa'
+                },
+                splitLine: {
+                    lineStyle: {
+                        color: 'rgba(170, 170, 170, 0.3)'
+                    }
                 }
             },
             series: [
