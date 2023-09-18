@@ -338,7 +338,8 @@ const renderCharts = (headerTab) => {
                         <div style="margin-top: 10px; font-size: 20px; font-weight: 400; color: rgb(47, 165, 203)">$ ${value}</div>
                     </div>`
                 },
-                backgroundColor: '#282828'
+                backgroundColor: '#282828',
+                borderColor: 'rgba(117,117,117,0.53)'
             },
             grid: {
                 left: '4%',
@@ -409,7 +410,8 @@ const renderCharts = (headerTab) => {
                         <div style="margin-top: 10px; font-size: 20px; font-weight: 400; color: rgb(82, 176, 161)">$ ${value}</div>
                     </div>`
                 },
-                backgroundColor: '#282828'
+                backgroundColor: '#282828',
+                borderColor: 'rgba(117,117,117,0.53)'
             },
             grid: {
                 left: '4%',
